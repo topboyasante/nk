@@ -1,0 +1,29 @@
+---
+import { projects } from "../../../db/index";
+import { Link2Icon } from "@radix-ui/react-icons";
+---
+
+<div>
+  <h3 class="mb-5">Projects</h3>
+  <div class="grid md:grid-cols-2 gap-5">
+    {
+      projects.map((item) => {
+        return (
+          <div class="mb-8">
+            <h5 class="w-auto text-[16px] font-semibold">{item.title}</h5>
+
+            <p class="text-neutral-500 my-1">
+              {item.about}
+            </p>
+            <a href={item.link} target="_blank" class="text-sm">
+              <div class="flex items-center gap-2 mt-5">
+                <Link2Icon />
+                <p>{item.link_text}</p>
+              </div>
+            </a>
+          </div>
+        );
+      })
+    }
+  </div>
+</div>
