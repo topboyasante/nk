@@ -11,27 +11,27 @@
 
 @layer base {
   body{
-    @apply bg-[#f3f5f4]
+    @apply bg-[#f3f5f4] dark:bg-[#000000]
   }
   h1 {
-    @apply text-[#1b3817] scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl;
+    @apply text-[#1b3817] dark:text-white scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl;
   }
   h2 {
-    @apply text-[#1b3817] scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
+    @apply text-[#1b3817] dark:text-white scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
   }
   h3 {
-    @apply text-[#1b3817] scroll-m-20 text-2xl font-semibold tracking-tight;
+    @apply text-[#1b3817] dark:text-white scroll-m-20 text-2xl font-semibold tracking-tight;
   }
   h4 {
-    @apply text-[#1b3817] scroll-m-20 text-xl font-semibold tracking-tight;
+    @apply text-[#1b3817] dark:text-white scroll-m-20 text-xl font-semibold tracking-tight;
   }
   h5 {
-    @apply text-[#1b3817] scroll-m-20 text-lg font-semibold tracking-tight;
+    @apply text-[#1b3817] dark:text-white scroll-m-20 text-lg font-semibold tracking-tight;
   }
   h6 {
-    @apply text-[#1b3817] scroll-m-20 text-sm font-semibold tracking-tight;
+    @apply text-[#1b3817] dark:text-white scroll-m-20 text-sm font-semibold tracking-tight;
   }
   p {
-    @apply text-[#1b3817] leading-7 [&:not(:first-child)]:mt-1;
+    @apply text-[#1b3817] dark:text-white leading-7 [&:not(:first-child)]:mt-1;
   }
 }
