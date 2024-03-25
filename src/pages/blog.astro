@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/base-layout.astro";
+import "../styles/global.css";
+const allPosts = await Astro.glob("./posts/*.md");
+import { Link2Icon } from "@radix-ui/react-icons";
+
+const pageTitle = "Nana Kwasi Asante | Blog";
+---
+
+<BaseLayout title={pageTitle}>
+  <h3>My Thoughts</h3>
+  <br />
+  <ul>
+    {
+      allPosts.map((post) => (
+        <li class="my-5">
+          <div class="flex flex-col md:flex-row justify-between md:items-center">
+            <div>
+              <h5>{post.frontmatter.title}</h5>
+              <p class="text-neutral-500">{post.frontmatter.description}</p>
+            </div>
+            <a href={`${post.url}`} class="text-sm">
+              <div class="flex items-center gap-2 dark:text-white hover:underline">
+                <Link2Icon />
+                <p>Read</p>
+              </div>
+            </a>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

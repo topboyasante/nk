@@ -11,7 +11,7 @@
 
 @layer base {
   body{
-    @apply bg-[#f3f5f4] dark:bg-[#000000]
+    @apply bg-[#f3f5f4] dark:bg-[#111110]
   }
   h1 {
     @apply text-[#1b3817] dark:text-white scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl;
